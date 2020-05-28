@@ -4,6 +4,7 @@ import store from './store'
 import { loadUser } from './actions/authActions'
 import { Container } from 'reactstrap'
 import LoginForm from './components/auth/loginForm'
+import RegisterModal from './components/auth/RegisterModal'
 // import IndexNavbar from './components/IndexNavbar'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -17,13 +18,9 @@ class App extends React.Component {
     return (
       <Router>
         <Provider store={store}>
-          {/* <IndexNavbar /> */}
           <Container>
             <LoginForm />
-            {/* <Route path="/:id/:postid" exact component={PostDetail} />
-            <Route path="/search/user/posts/" exact component={SearchPost} />
-            <Route path="/:id" exact component={UserPosts} />
-            <Route path="/" exact component={UserList} /> */}
+            <RegisterModal />
           </Container>
         </Provider>
       </Router>
