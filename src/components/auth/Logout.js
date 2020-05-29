@@ -5,10 +5,14 @@ import { NavLink } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 export class Logout extends Component {
+    
     static propTypes = {
         logout: PropTypes.func.isRequired
     }
     
+    //CSS TIME
+
+
     render() {
         return (
             <Fragment key="logoutmodal">

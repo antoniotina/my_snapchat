@@ -73,8 +73,20 @@ class RegisterModal extends Component {
     render() {
         return (
             <div>
-                <NavLink onClick={this.toggle} href="#">
-                    Register
+                <NavLink
+                    style={{
+                        background: '#1b94f6',
+                        color: 'white',
+                        position:'fixed',
+                        bottom: 0,
+                        width: 100 + 'vw',
+                        height: 15 + 'vh',
+                        fontSize: 10 + 'vw',
+                        lineHeight: 12 + 'vh', 
+                        textAlign: 'center', 
+                    }}
+                    onClick={this.toggle} href="#">
+                    SIGN UP
                 </NavLink>
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>Register!</ModalHeader>

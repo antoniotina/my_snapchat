@@ -1,31 +1,22 @@
 import React from 'react';
 import { Provider } from 'react-redux'
-import store from './store'
-import { loadUser } from './actions/authActions'
 import { Container } from 'reactstrap'
-import LoginForm from './components/auth/loginForm'
-import RegisterModal from './components/auth/RegisterModal'
+import Page from './components/Page'
+import Profile from './components/Profile'
 // import IndexNavbar from './components/IndexNavbar'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import store from './store'
 
 class App extends React.Component {
-
-  componentDidMount() {
-    store.dispatch(loadUser())
-  }
-
   render() {
     return (
       <Router>
         <Provider store={store}>
-          <Container>
-            <LoginForm />
-            <RegisterModal />
-          </Container>
+          <Page />
         </Provider>
       </Router>
     )
   }
 }
 
-export default App;
+export default App

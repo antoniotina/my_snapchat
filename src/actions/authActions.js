@@ -113,9 +113,9 @@ export const register = ({ email, password }) => dispatch => {
 //     return config
 // }
 
-// //logout no need for dispatch
-// export const logout = () => {
-//     return {
-//         type: LOGOUT_SUCCESS
-//     }
-// }
+//logout no need for dispatch
+export const logout = () => {
+    return {
+        type: LOGOUT_SUCCESS
+    }
+}

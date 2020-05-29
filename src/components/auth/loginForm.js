@@ -71,8 +71,20 @@ class LoginModal extends Component {
     render() {
         return (
             <div>
-                <NavLink onClick={this.toggle} href="#">
-                    Login
+                <NavLink
+                    style={{
+                        background: '#e7314c',
+                        color: 'white',
+                        position: 'fixed',
+                        bottom: 15 + 'vh',
+                        width: 100 + 'vw',
+                        height: 15 + 'vh',
+                        fontSize: 10 + 'vw',
+                        lineHeight: 12 + 'vh',
+                        textAlign: 'center',
+                    }}
+                    onClick={this.toggle} href="#">
+                    LOG IN
                 </NavLink>
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>Log in !</ModalHeader>
